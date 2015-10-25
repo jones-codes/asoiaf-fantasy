@@ -1,0 +1,31 @@
+<template name="NewWarrior">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4-offset">
+      </div>
+      <div class="col-md-4">
+        <div class="well">
+          <h2 class="header text-center">Add Warriors</h2>
+          <form>
+              <div class="form-group">
+                <input class="form-control" type="text" name="warriorName" placeholder="Enter Warrior's Name">
+              </div>
+              <div class="form-group">
+                <input class="form-control" type="number" name="rank" min="1" max="64" placeholder="Enter Warrior's Rank">
+              </div>
+              <div class="form-group">
+                <input class="form-control" type="text" name="weapon" placeholder="Enter Warrior's Weaponry">
+              </div>
+              <div class="form-group">
+                <input class="form-control" type="text" name="armor" placeholder="Enter Warrior's Armor">
+              </div>
+              <button class="btn btn-success" type="submit">Add Warrior</button>
+            </form>
+        </div>
+      </div>
+      <div class="col-md-4-offset">
+      </div>
+    </div>
+  </div>
+    {{> WarriorsList}}
+</template>

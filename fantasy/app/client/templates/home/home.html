@@ -1,0 +1,28 @@
+<template name="Home">
+  <header>
+    <h1 class="header text-center">ASOIAF Fantasy Draft</h1>
+  </header>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-xs-6">
+        {{#if currentUser}}
+        {{> Dashboard}}
+        {{else}}
+        {{> Register}}
+        {{/if}}
+      </div>
+      <div class="col-md-4 col-xs-6">
+        {{#if currentUser}}
+        {{else}}
+          {{> Login}}
+        {{/if}}
+      </div>
+      <div class="col-md-4 col-xs-6">
+      </div>
+    </div>
+  </div>
+  {{#if currentUser}}
+    {{> NewWarrior}}
+  {{/if}}
+</template>
+
